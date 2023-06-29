@@ -38,8 +38,11 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
+# Other files
+.DS_Store
+
 # Sensitive data
-raw/*
-!raw/README.md
 data/*
 !data/README.md
+raw/restricted_*
+raw/AFR.bim
