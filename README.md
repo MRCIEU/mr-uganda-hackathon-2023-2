@@ -2,11 +2,11 @@
 
 ## Authors
 
-Mukisa John
-Shakirah Namuli
-Marion Nyaboke
-Kester Tindi
-Venexia Walker (Tutor)
+- Mukisa John
+- Shakirah Namuli
+- Marion Nyaboke
+- Kester Tindi
+- Venexia Walker (Tutor)
 
 ## Using this code
 
