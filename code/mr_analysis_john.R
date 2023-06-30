@@ -1,9 +1,9 @@
 ##group work.
-###doing the analysis of two sample MR for teh Hackathon
+###doing the analysis of two sample MR for the Hackathon
 
 ##clearing the global data lists
 rm(list=ls())
-##setiing the work directories
+## setting the work directories
 setwd("")
 
 
@@ -19,24 +19,24 @@ library(MRInstruments)
 library(ggplot2)
 library(png)
 
-##reading in the data
+##reading the data
 ao <- read.csv("raw/exposure.csv")
 ##checking the first ten lines of the output
 
 head (ao)
-##this should list the datacross check
+##this should list the data cross check
 ##checking the size of the exposures
 dim(ao)
 View(ao)
 ##this gives 550 11 columns
 
-##checking the SNPS taht meet the P value thresholds of signofcance, Genome wide 5Xe-8
+##checking the SNPS that meet the P value thresholds of significance, Genome-wide 5Xe-8
 length(which(ao$pval_fe<=5E-8))
 #these are 2 snps
 
 ##doing the one that shows the entire data
 
-##getting the signifcant 
+##getting the significant 
 significant_exposure <- ao[ao$pval_fe<=5e-07,]
 ##dimensions of those with P value less than -07
 dim(significant_exposure)
@@ -144,10 +144,10 @@ nrow(significant_outcome)
 View(dat) 
 #two rows were lost
 
-##check the unique comaprison
+##check the unique comparison
 ##looking at the data dimensions
 dim(dat)
-#this now has 20 rows and 32 cloumns 
+#this now has 20 rows and 32 columns 
 ##removing the palindromes
 palindromic_at<-subset(dat,effect_allele.exposure %in% "A"&other_allele.exposure %in% "T")
 palindromic_ta<-subset(dat,effect_allele.exposure %in% "T"&other_allele.exposure %in% "A")
@@ -197,15 +197,15 @@ mr_results$hci <- exp(mr_results$hci*mr_results$sd)
 results<-cbind.data.frame(mr_results$outcome,mr_results$nsnp,mr_results$method,mr_results$b,mr_results$se,mr_results$pval,mr_results$exposure,mr_results$lci,mr_results$hci,mr_results$or, mr_results$sd )
 
 ##saving the results data
-write.csv(results,"finalresults.cv")
+write.csv(results,"finalresults.csv")
 
 
 ##or you can use the qnorm(0.975)
 ##viewing the data.
 table(results$`mr_results$method`)
 
-##checking teh Unique command
-#3the data outputs the logodds. We need to have it as odds ratios
+##checking the Unique command
+#3the data outputs the log odds. We need to have it as odds ratios
 ##dimensiosn of the final dataset
 dim(results)
 #this gives 6 columns and 18 rows.
