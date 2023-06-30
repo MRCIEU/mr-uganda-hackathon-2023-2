@@ -13,6 +13,7 @@
 - **clean_exposure.R**: This script applies a p-value threshold of 1e-5 to restrict the data and summarizes the sample size and allele frequency for the dataset. The script retains the fixed effect meta-analysis beta as the effect estimate.
 - **clean_outcome.R**: This script prepares the outcome data by separating snpid into the component parts and removing unncessary variables.
 - **map_rsid.R**: This script annotates the exposure and outcome data with the rsID. This sceipt also makes one exposure and one outcome dataset.
+- **mr_analysis-*.R**: This script performs the Mendelian randomization analyses.
 
 ## Availability of data
 
