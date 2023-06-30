@@ -1,16 +1,12 @@
-# Project title
+# What is the role of obesity in smoking behaviour among Continental African ancestry individuals? 
 
-This respository contains ...
+## Authors
 
-## Abstract
-
-Introduction:
-
-Methods:
-
-Results:
-
-Conclusions:
+Mukisa John
+Shakirah Namuli
+Marion Nyaboke
+Kester Tindi
+Venexia Walker (Tutor)
 
 ## Using this code
 
@@ -20,16 +16,10 @@ Conclusions:
 
 ## Availability of data
 
-The data used in this project are available from...
-
-## Funding statement
-
-This work was supported by ...
+The data used in this project are publicly available:
+- [Obesity traits](https://www.ebi.ac.uk/gwas/publications/31675503)
+- [Smoking behaviour traits](https://www.ebi.ac.uk/gwas/publications/36335192)
 
 ## Further information
 
-If you would like any further information, please contact venexia.walker@bristol.ac.uk. 
-
-## Acknowledgements
-
-Thank you to ...
+If you would like any further information, please contact venexia.walker@bristol.ac.uk.
