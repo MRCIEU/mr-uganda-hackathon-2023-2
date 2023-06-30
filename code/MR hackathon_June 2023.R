@@ -4,7 +4,7 @@
 ##clearing the global data lists
 rm(list=ls())
 ##setiing the work directories
-setwd("C:/hanchard lab 2019/hanchard lab 2019/hanchard lab 2019/BCM 2019/Managing innovation for sustainable health course 2021/MRC Mendelian randomization/Teaching material/DAY 5/mr-uganda-hackathon-2023-2-main/")
+setwd("")
 
 
 ###loading the libraries
